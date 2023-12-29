@@ -1,5 +1,12 @@
 # Changelog (修改历史)
 
+## [0.0.5](https://github.com/peichenhu/good-repo-cli/compare/0.0.4...0.0.5) (2023-12-29)
+
+
+### ✨ Features
+
+* 生成 prettier 配置文件 ([ee6e07d](https://github.com/peichenhu/good-repo-cli/commit/ee6e07d692bc7312b7aca159db722ac7a792e7aa))
+
 ## [0.0.4](https://github.com/peichenhu/good-repo-cli/compare/0.0.3...0.0.4) (2023-12-29)
 
 
