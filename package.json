@@ -1,7 +1,7 @@
 {
   "name": "@pch1024/good-repo-cli",
   "description": "一个自动化配置项目中流程与规范的工具，配置内容包括 husky、eslint、prettier、lintStaged、commitizen、release-it 内容。",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "type": "module",
   "license": "MIT",
   "bin": {
