@@ -1,9 +1,30 @@
 {
   "name": "@pch1024/good-repo-cli",
   "description": "一个自动化配置项目中流程与规范的工具，配置内容包括 husky、eslint、prettier、lintStaged、commitizen、release-it 内容。",
+  "keywords": [
+    "pch1024",
+    "good-repo-cli",
+    "good-repo",
+    "cli"
+  ],
+  "homepage": "https://github.com/peichenhu/good-repo-cli.git",
   "version": "0.0.3",
   "type": "module",
   "license": "MIT",
+  "packageManager": "pnpm@8.12.1",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/peichenhu/good-repo-cli.git"
+  },
+  "engines": {
+    "node": ">= 16"
+  },
+  "scripts": {
+    "prepare": "husky install",
+    "lint": "lint-staged",
+    "release": "HUSKY=0 release-it",
+    "commit": "git commit"
+  },
   "bin": {
     "good-repo": "./index.mjs"
   },
@@ -22,11 +43,5 @@
     "lint-staged": "^15.2.0",
     "prettier": "^3.1.1",
     "release-it": "^17.0.1"
-  },
-  "scripts": {
-    "prepare": "husky install",
-    "lint": "lint-staged",
-    "release": "HUSKY=0 release-it",
-    "commit": "git commit"
   }
 }
