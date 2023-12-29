@@ -1,5 +1,12 @@
 # Changelog (修改历史)
 
+## [0.0.4](https://github.com/peichenhu/good-repo-cli/compare/0.0.3...0.0.4) (2023-12-29)
+
+
+### 📚 Documentation
+
+* 完善 package.json 内容 ([937e160](https://github.com/peichenhu/good-repo-cli/commit/937e160e483ed7527c7f54e7e281806f41224cf0))
+
 ## [0.0.3](https://github.com/peichenhu/good-repo-cli/compare/0.0.2...0.0.3) (2023-12-29)
 
 
