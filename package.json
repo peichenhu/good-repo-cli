@@ -36,7 +36,7 @@
     "@commitlint/cli": "^18.4.3",
     "@commitlint/config-conventional": "^18.4.3",
     "@commitlint/cz-commitlint": "^18.4.3",
-    "@pch1024/commit-cz": "^0.0.2",
+    "@pch1024/commit-cz": "^0.0.5",
     "@release-it/conventional-changelog": "^8.0.1",
     "commitizen": "^4.3.0",
     "husky": "^8.0.3",
