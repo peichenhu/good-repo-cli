@@ -1,0 +1,31 @@
+{
+  "name": "@pch1024/good-repo-cli",
+  "version": "0.0.1",
+  "type": "module",
+  "license": "MIT",
+  "bin": {
+    "good-repo": "./index.mjs"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/",
+    "access": "public"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^18.4.3",
+    "@commitlint/config-conventional": "^18.4.3",
+    "@commitlint/cz-commitlint": "^18.4.3",
+    "@release-it/conventional-changelog": "^8.0.1",
+    "commitizen": "^4.3.0",
+    "husky": "^8.0.3",
+    "inquirer": "8.2.6",
+    "lint-staged": "^15.2.0",
+    "prettier": "^3.1.1",
+    "release-it": "^17.0.1"
+  },
+  "scripts": {
+    "prepare": "husky install",
+    "lint": "lint-staged",
+    "release": "HUSKY=0 release-it",
+    "commit": "git commit"
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "plugins": {
+    "@release-it/conventional-changelog": {
+      "ignoreRecommendedBump": "true",
+      "infile": "CHANGELOG.md",
+      "header": "# Changelog (修改历史)",
+      "preset": {
+        "name": "conventionalcommits",
+        "types": [
+          {
+            "type": "feat",
+            "section": "✨ Features"
+          },
+          {
+            "type": "fix",
+            "section": "🐛 Bug Fixes"
+          },
+          {
+            "type": "docs",
+            "section": "📚 Documentation"
+          },
+          {
+            "type": "style",
+            "section": "💎 Styles"
+          },
+          {
+            "type": "refactor",
+            "section": "📦 Code Refactoring"
+          },
+          {
+            "type": "perf",
+            "section": "🚀 Performance Improvements"
+          },
+          {
+            "type": "test",
+            "section": "🚨 Tests"
+          },
+          {
+            "type": "build",
+            "section": "🛠 Builds"
+          },
+          {
+            "type": "ci",
+            "section": "⚙️ Continuous Integrations"
+          },
+          {
+            "type": "chore",
+            "section": "♻️ Chores"
+          },
+          {
+            "type": "revert",
+            "section": "🗑 Reverts"
+          }
+        ]
+      }
+    }
+  },
+  "git": {
+    "commitMessage": "chore: release v${version}"
+  }
+}

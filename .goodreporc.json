@@ -1,0 +1,8 @@
+{
+  "husky": true,
+  "eslint": false,
+  "prettier": true,
+  "lintStaged": true,
+  "commitizen": true,
+  "releaseIt": true
+}
