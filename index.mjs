@@ -16,12 +16,24 @@ const czrcFile = path.join(cwd, ".cz.json");
 const commitlintrcFile = path.join(cwd, ".commitlintrc.json");
 const lintstagedrcFile = path.join(cwd, ".lintstagedrc.json");
 const releaseitrcFile = path.join(cwd, ".release-it.json");
+const prettierrcFile = path.join(cwd, ".prettierrc.json");
 
 try {
   Object.assign(goodreporc, req(goodreporcFile));
 } catch (error) {}
 
 const czrc = { path: "@commitlint/cz-commitlint" };
+
+/** @type {import("prettier").Config} */
+const prettierrc = {
+  useTabs: false, // 采用 tab 缩进还是空白缩进
+  tabWidth: 2, // tab 键宽度
+  printWidth: 80, // 使用较大的打印宽度，因为 Prettier 的换行设置似乎是针对没有注释的 JavaScript.
+  singleQuote: false, // 字符串是否使用单引号
+  semi: true, // 行位是否使用分号
+  trailingComma: "all", // 对于 ES5 而言, 尾逗号不能用于函数参数，因此使用它们只能用于数组
+  bracketSpacing: true, // 是否保留括号中的空格 默认true
+};
 
 const commitlintrc = {
   extends: ["@commitlint/config-conventional"],
@@ -193,6 +205,7 @@ task.then((answers) => {
 
   if (answers.prettier) {
     spawnSync("pnpm", ["add", "--save-dev", "prettier"], cmd);
+    writeJsonFile(prettierrc, prettierrcFile);
   }
 
   if (answers.lintStaged) {
