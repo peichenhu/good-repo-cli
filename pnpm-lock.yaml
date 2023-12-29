@@ -14,6 +14,9 @@ devDependencies:
   '@commitlint/cz-commitlint':
     specifier: ^18.4.3
     version: 18.4.3(commitizen@4.3.0)(inquirer@8.2.6)(typescript@5.3.3)
+  '@pch1024/commit-cz':
+    specifier: ^0.0.2
+    version: 0.0.2
   '@release-it/conventional-changelog':
     specifier: ^8.0.1
     version: 8.0.1(release-it@17.0.1)
@@ -386,6 +389,12 @@ packages:
     resolution: {integrity: sha512-FLWs/AvZllw/AGVs+nJ+ELCDZZJk+kY0zMen118xhL2zD0s1etIUHm1odgjP7epxYU1ln7SZxEUWYop5bhsdgQ==}
     dependencies:
       '@octokit/openapi-types': 19.1.0
+    dev: true
+
+  /@pch1024/commit-cz@0.0.2:
+    resolution: {integrity: sha512-CF8tpI+bzgYAEl1P3NOOF3KqHtKADtcNufyWDkvIQlQSQOb+G2oSbGE6nwHdfjMGUKDBmuvBl1Wf4Ol95mcs2w==}
+    dependencies:
+      '@commitlint/config-conventional': 18.4.3
     dev: true
 
   /@pnpm/config.env-replace@1.1.0:
